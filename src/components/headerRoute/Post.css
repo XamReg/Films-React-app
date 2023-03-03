@@ -1,0 +1,13 @@
+
+
+.box_post {
+    width: 250px;
+    height: 300px;
+    background-color: skyblue;
+    /* font-size: 25px;
+    padding: 50px;
+    display: flex; */
+    float: left;
+    margin-top: 10px;
+    margin-left: 10px;
+  }
