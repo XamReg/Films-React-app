@@ -1,0 +1,21 @@
+.styleTicket{
+    width: 600px;
+    height: 400px;
+    /* background-color: aquamarine; */
+    margin-left: 20px;
+    /* margin-top: 150px; */
+    border-radius: 5px;
+}
+
+.titleTicket{
+    text-shadow: 1px 1px 1px white;
+    font-size: 32px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.textTicket{
+    margin-left: 10px;
+    margin-top: 5px;
+    font-size: 22px;
+}

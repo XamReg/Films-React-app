@@ -5,6 +5,7 @@ const storSlice = createSlice({
     initialState: {
         posts:{},
         dateOnline:{},
+        ticketBuy: {},
     },
 
     reducers: {
@@ -18,11 +19,19 @@ const storSlice = createSlice({
             state.dateOnline = {
                 nameFime: action.payload.nameFime
             }
+        },
+        tiketBuyPlace(state,action) {
+            state.ticketBuy = {
+                Title: action.payload.Title,
+                imdbID: action.payload.imdbID,
+                dateFilm: action.payload.dateFilm,
+                placeM: action.payload.placeM,
+            }
         }
 
     }
 });
 
-export const {checkPosts,checkDateOnline} = storSlice.actions;
+export const {checkPosts,checkDateOnline,tiketBuyPlace} = storSlice.actions;
 
 export default storSlice.reducer;

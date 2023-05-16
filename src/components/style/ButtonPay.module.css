@@ -1,0 +1,21 @@
+.buttons {
+    outline:none;
+    height: 50px;
+    text-align: center;
+    width: 180px;
+    border-radius:40px;
+    background: #f9fd099d;
+    border: 2px solid rgb(211, 245, 15);
+    color: rgb(2, 6, 2);
+    letter-spacing:1px;
+    text-shadow:0;
+    font-size: 19px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+.buttons:hover {
+    transform: scale(1.02);
+      color:rgb(4, 0, 0);
+      text-shadow: 1px 1px 1px black;
+      /* background: rgb(6, 242, 163); */
+}

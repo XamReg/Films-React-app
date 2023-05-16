@@ -1,0 +1,125 @@
+.block_button_date{
+    width: 500px;
+    height: 100%;
+    /* background-color: aquamarine; */
+    overflow: auto;
+
+}
+
+.block_place{
+    transition: 0.8s;
+    width: 650px;
+    height: 450px;
+    border-radius: 10px;
+    background-color: rgba(230, 232, 229, 0.576);
+}
+
+.titleFont{
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.691);
+    padding: 5px;
+    padding-left: 10px;
+    font-size: 25px;
+}
+
+.button_date_films{
+    display: flex;
+    margin-left: 10px;
+    margin-top: 5px;
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background-color: rgb(206, 206, 23);
+}
+
+.button_date_films:hover{
+    transform: scale(1.02);
+    transition: 0.9s;
+    color: rgb(232, 232, 232);
+    box-shadow: 1px 1px 1px black;
+    background-color: rgb(206, 130, 23);
+    
+}
+
+.posit_back{   
+    margin-left: 10px;   
+    margin-top: 20px;
+}
+
+.active_button{
+    transition: 0.9s;
+    margin-left: 20px;
+    transform: scale(1.05);
+    background-color: rgb(32, 255, 3);
+    box-shadow: 1px 1px 1px black;
+}
+
+/* .active_button:hover{
+    background-color: rgb(118, 15, 235);
+} */
+
+.screen_pl_center{
+    text-align: center;
+    /* margin: auto; */
+}
+.screen_pl{
+    /* margin-left: 50%;
+    margin-right: 50%; */
+    width: 90%;
+}
+
+.block_place_number{
+    display: grid;
+    justify-content: center;
+    grid-template-rows: repeat(3,80px);
+    grid-template-columns: repeat(5,80px);
+    /* background-color: azure; */
+    justify-items: center;
+    align-items: center;
+}
+
+.button_pay_style{
+    display: inline-block;
+    padding: .75rem 1.25rem;
+    border-radius: 10rem;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: .15rem;
+    transition: all .3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+}
+.button_pay_style:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: color;
+    border-radius: 10rem;
+    z-index: -2;
+}
+.button_pay_style:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: darken(color, 15%);
+    transition: all .3s;
+    border-radius: 10rem;
+    z-index: 1;
+}
+/* .button_pay_style:hover {
+    color: #fff;}
+.button_pay_style:before {
+      width: 100%;
+    }
+   */
+

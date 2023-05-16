@@ -1,5 +1,5 @@
 import {useLoaderData, Link, NavLink} from 'react-router-dom';
-import './Post.css'
+import postStyle from '../style/Post.module.css'
 import {useDispatch} from 'react-redux';
 import {checkPosts} from "../store/storSlice"
 
@@ -11,18 +11,22 @@ const  Post = () => {
     const posts = useLoaderData();
     const idDate = new Date().toString();
     return(
-        <div>
+        <div className={postStyle.blockCenter}>
             {posts.map(post => (
                 <Link to={`/posts/${post.imdbID}`} 
-                    // id="RouterNavLink" 
-                    key={post.imdbID} 
-                    className="box_post"
-                        onClick={() => checkPostEdit(
-                        post.Title,
-                        post.imdbID,
-                        undefined,
+                // id="RouterNavLink" 
+                key={post.imdbID}
+                    onClick={() => checkPostEdit(
+                    post.Title,
+                    post.imdbID,
+                    post.Poster,
                 )}>
-                    <span>{post.Title}</span>
+                    <div className={postStyle.box_post}>
+                        <div className={postStyle.block_img}>
+                            <img className={postStyle.image_img} src={post.Poster} ></img>
+                        </div>
+                        <span className={postStyle.title_film}>{post.Title}</span>
+                    </div>
                 </Link>
             ))}
         </div>
